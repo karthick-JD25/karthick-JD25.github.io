@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #F7F3EC;
+  --color-brand-card: #FFFFFF;
+  --color-brand-text: #171717;
+  --color-brand-muted: #66615B;
+  --color-brand-primary: #C46A3C;
+  --color-brand-secondary: #A76B4F;
+  --color-brand-accent: #C46A3C;
+  --color-brand-success: #2E7D32;
+  --color-brand-warning: #D84315;
+  --color-brand-danger: #C62828;
+  --color-brand-border: #D8D1C7;
+  --color-brand-hover: #A95B36;
+  
+  --font-sans: "Inter", var(--font-geist-sans), sans-serif;
+  --font-mono: "Fira Code", var(--font-geist-mono), monospace;
+}
+
+@import "../styles/animations.css";
+@import "../styles/utilities.css";
+
+/* Base document defaults */
+:root {
+  color-scheme: light;
+  --background: #F7F3EC;
+  --foreground: #171717;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+

@@ -1,0 +1,81 @@
+/* Custom scrollbars for warm editorial theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F3EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(23, 23, 23, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(196, 106, 60, 0.4);
+}
+
+/* Gradient texts - shifting from neon/blue to elegant charcoal and clay tones */
+.text-gradient-primary {
+  background: linear-gradient(135deg, #171717 30%, #66615B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #C46A3C 0%, #A76B4F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #A76B4F 0%, #85523A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-glow {
+  background: linear-gradient(135deg, #171717 0%, #C46A3C 50%, #A76B4F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid & dot pattern backdrops configured for warm light mode */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(216, 209, 199, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(216, 209, 199, 0.25) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(216, 209, 199, 0.3) 1px, transparent 1px);
+}
+
+/* Scroll-indicator progress bar in clay tone */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #C46A3C;
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(196, 106, 60, 0.15);
+  color: #171717;
+}
+
+/* Brand color overrides for editorial redesign */
+.bg-brand-bg { background-color: #F7F3EC; }
+.text-brand-primary { color: #C46A3C; }
+.text-brand-text { color: #181818; }
+.text-brand-muted { color: #6B6B6B; }
+.border-brand-border { border-color: #DDD6CC; }
+.bg-brand-card { background-color: #FFFFFF; }
